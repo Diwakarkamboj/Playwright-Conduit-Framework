@@ -1,0 +1,33 @@
+{
+  "name": "playwright-conduit-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:register": "npx playwright test --grep \"@register\\b\"",
+    "test:login": "npx playwright test --grep \"@login\\b\"",
+    "test:auth": "npx playwright test --grep \"@RegisterAndLoginCheck\"",
+    "test:auth:seq": "npx playwright test --grep \"@RegisterAndLoginCheck\" --workers=1",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diwakarkamboj/Playwright-Conduit-Framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Diwakarkamboj/Playwright-Conduit-Framework/issues"
+  },
+  "homepage": "https://github.com/Diwakarkamboj/Playwright-Conduit-Framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
